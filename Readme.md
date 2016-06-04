@@ -1,4 +1,4 @@
-# Cheat40: a Vim cheat sheet for Vim
+# Cheat40: a cheat sheet for Vim
 
 Cheat40 is an extensible 40-column cheat sheet that you may open in Vim by
 pressing `<leader>?`. Mappings and commands are organized like the menus of
