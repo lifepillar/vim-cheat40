@@ -19,6 +19,8 @@ syn match   Cheat40EndSection   /^}}}$/ conceal
 syn match   Cheat40Tag          /`[^` \t]\+`/hs=s+1,he=e-1 contained contains=Cheat40Backtick
 syn match   Cheat40Backtick     /`/ contained conceal
 syn match   Cheat40Mode         /[NICVTOM*]\+\%>40v/
+syn match   Cheat40Comment      /#.*$/ contains=Cheat40Hash
+syn match   Cheat40Hash         /#/ contained conceal
 
 hi def link Cheat40Descr   Normal
 hi def link Cheat40Command   Constant
@@ -30,6 +32,8 @@ hi def link Cheat40EndSection Ignore
 hi def link Cheat40Mode      Label
 hi def link Cheat40Tag       Tag
 hi def link Cheat40Backtick  Ignore
+hi def link Cheat40Comment   Comment
+hi def link Cheat40Hash      Ignore
 
 let b:current_syntax = "cheat40"
 
