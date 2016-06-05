@@ -28,9 +28,18 @@ anywhere in your `runtimepath` (e.g., in `~/.vim`). Cheat40 searches
 developers to provide a cheat sheet for their plugins by putting a `cheat40.txt`
 file in the top folder of their plugins.
 
-The syntax is very simple:
+If you do not want to use the default cheat sheet that comes with this plugin,
+set the following variable in your `.vimrc`:
 
-- foldable sections use Vim's default markers (`{{{` and `}}}`);
+    let g:cheat40_use_default = 0
+
+In this case, I recommend that you copy `cheat40.txt` into your `.vim` folder
+and modify it to suit your needs.
+
+The syntax of a cheat sheet is very simple:
+
+- foldable sections use Vim's default markers (`{{{` and `}}}`) (see `:h
+  fold-marker`);
 - sections of the form `About … {{{ … }}}` are interpreted as block comments;
 - lines starting with a `#` are interpreted as line comments;
 - each line, except for comments and section markers, must be exactly 40 columns
@@ -38,8 +47,8 @@ The syntax is very simple:
 - each item consists of a description, a key sequence, and a label;
 - the description must fit in columns 1–25 (long descriptions may be split into
   several lines);
-- the key sequence and the label must fit in columns 26-40 (long key sequences
-  may be split into several lines);
+- the key sequence and the label must fit in columns 26–40 (long key sequences
+  should be split into several lines);
 - the label is a right-justified sequence of one or more characters (e.g., `N`
   for Normal mode, `I` for Insert mode, and so on).
 
