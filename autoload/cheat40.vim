@@ -30,7 +30,7 @@ fun! cheat40#open()
   setlocal foldlevel=1 foldmethod=marker foldtext=substitute(getline(v:foldstart),'\\s\\+{{{.*$','','')
   setlocal concealcursor=nc conceallevel=3
   setlocal expandtab nonumber norelativenumber nospell nowrap textwidth=40
-  setlocal fileencoding=utf-8 filetype=cheat40
+  setlocal fileencoding=utf-8 filetype=cheat40 nomodifiable
   nnoremap <silent> <buffer> <tab> <c-w><c-p>
   nnoremap <silent> <buffer> q <c-w><c-p>@=winnr("#")<cr><c-w>c
 endf
