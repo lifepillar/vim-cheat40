@@ -12,7 +12,7 @@ syntax sync fromstart
 syn match   CheatsheetComment      "\%1v.*\%<25v"
 syn match   CheatsheetCommand      "\%26v.*\%40v" contains=CheatsheetMode
 syn match   CheatsheetHeader       "^.*{{{\d*$" contains=CheatsheetBeginSection
-syn region  CheatsheetAbout        start="^About {{{2$" end="^}}}$" keepend contains=CheatsheetBeginSection,CheatsheetEndSection
+syn region  CheatsheetAbout        start="^About.*{{{2$" end="^}}}$" keepend contains=CheatsheetBeginSection,CheatsheetEndSection
 syn match   CheatsheetFirstLine    "\%1l.*"
 syn match   CheatsheetBeginSection "{{{\d*" conceal contained
 syn match   CheatsheetEndSection   "^}}}$" conceal
