@@ -1,9 +1,17 @@
 Press q to dismiss, <Tab> to lose focus
 About {{{2
+  Abbreviations used in descriptions:
+
+  »      Forwards/rightwards
+  «      Backwards/leftwards
+  WORD   Space-delimited word
+
+  Notation for key sequences:
+
   \      Leader (see `<leader>`)
   ‹r›    A register (", *, 0, 1, …)
          See `registers`
-  ‹Move› Motion or text object
+  ‹Move› A motion or a text object
          See `motion.txt`
          See `text-objects`
   ‹P›    A regular expression (pattern)
@@ -31,7 +39,7 @@ About {{{2
   is, leader followed by space). Ditto
   for «CR».
 
-  Notation:
+  Labels:
 
   N    Type in Normal mode
   C    Type in Command mode
@@ -44,9 +52,6 @@ About {{{2
   O    Operator (use in Visual mode, or
        before a motion or a text object)
   *    Acts on text under/after cursor
-  »    Forwards/rightwards
-  «    Backwards/leftwards
-  WORD Space-delimited word
 }}}
 File {{{1
 New untitled document    :enew         N
