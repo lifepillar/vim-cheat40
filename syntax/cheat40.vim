@@ -33,9 +33,9 @@ hi def link Cheat40BeginSection Ignore
 hi def link Cheat40EndSection   Ignore
 hi def link Cheat40Tag          Tag
 hi def link Cheat40Backtick     Ignore
-hi def link Cheat40Mode         Label
+hi def link Cheat40Mode         Type
 hi def link Cheat40Angle        Identifier
-hi def link Cheat40DblAngle     Type
+hi def link Cheat40DblAngle     Label
 hi def link Cheat40Comment      Comment
 hi def link Cheat40Hash         Ignore
 
