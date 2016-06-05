@@ -152,6 +152,7 @@ Start recording macro    q‹r›          N
 #Press q to stop recording
 Run recorded macro       @‹r›          N
 Repeat last macro        @@            N
+Repeat last Ex command   @:            N
 Run cmd in all buffers   :bufdo ‹Cmd›  N
 Text {{{1
 Objects {{{2
@@ -421,7 +422,6 @@ List of loaded plugins   :scr          N
 List of digraphs         :digraphs     N
 List all syntax items    :syn          N
 Misc {{{1
-Repeat last Ex command   @:            N
 Current directory        :pwd          N
 Change directory         :cd …         N
 Show the value of ‹Var›  :echo ‹Var›   N
