@@ -20,7 +20,9 @@ endfunction
 
 fun! cheat40#open()
   botright 40vnew +setlocal\ buftype=nofile\ bufhidden=wipe\ nobuflisted\ noswapfile
-  execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
+  if get(g:, 'cheat40_use_default', 1)
+    execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
+  endif
   for glob in s:split(&runtimepath)
     for cs in filter(map(filter(split(glob(glob), "\n"), 'v:val !~ "cheat40"'), 'v:val.s:slash()."cheat40.txt"'), 'filereadable(v:val)')
       execute "$read" cs
