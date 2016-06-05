@@ -367,9 +367,9 @@ To next jump position    «C-i»         N
 To start of next fold    zj            N
 To end of previous fold  zk            N
 Window {{{1
-New horiz. split window  :new          N
+New horizontal split     :new          N
 Ditto                    «C-w»n        N
-New vert. split window   :vnew         N
+New vertical split       :vnew         N
 Close window             «C-w»c        N
 Close inactive windows   «C-w»o        N
 Split horizontally       «C-w»s        N
