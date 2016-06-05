@@ -1,12 +1,12 @@
 # Cheat40: a cheat sheet for Vim
 
-Cheat40 is an extensible 40-column cheat sheet that you may open in Vim by
-pressing `<leader>?`. Mappings and commands are organized like the menus of
+Cheat40 is a foldable extensible 40-column cheat sheet that you may open in Vim
+by pressing `<leader>?`. Mappings and commands are organized like the menus of
 a GUI app: there is a File section, an Edit section, a View section, and so on.
 For each item the description comes first, because one typically wants to find
 how to execute a task, not what the meaning of a key sequence is (there is Vim's
 help for that). Syntax coloring and the use of `conceal` keep the cheat sheet
-free of clutter and easy to read.
+clutter-free and easy to read.
 
 
 ## Installation
@@ -22,23 +22,26 @@ Otherwise, use your preferred installation method.
 
 ## Extending the cheat sheet
 
-You may extend the cheat sheet by putting a file called `cheat40.txt` anywhere
-in your `runtimepath` (e.g., in `~/.vim`). Cheat40 searches `runtimepath` for
-such files and concatenates their content. This allows plugin developers to
-provide a cheat sheet for their plugins by putting a `cheat40.txt` in the top
-folder of their plugins.
+You may extend the cheat sheet by putting one or more files called `cheat40.txt`
+anywhere in your `runtimepath` (e.g., in `~/.vim`). Cheat40 searches
+`runtimepath` for such files and concatenates their content. This allows plugin
+developers to provide a cheat sheet for their plugins by putting a `cheat40.txt`
+file in the top folder of their plugins.
 
 The syntax is very simple:
 
 - foldable sections use Vim's default markers (`{{{` and `}}}`);
-- each line, except for section markers, must be 40 columns wide;
-- a description must fit in lines 1–25 (long descriptions may be split into
+- sections of the form `About … {{{ … }}}` are interpreted as block comments;
+- lines starting with a `#` are interpreted as line comments;
+- each line, except for comments and section markers, must be exactly 40 columns
+  wide (comments and section titles may be shorter than that);
+- each item consists of a description, a key sequence, and a label;
+- the description must fit in columns 1–25 (long descriptions may be split into
   several lines);
-- a mapping or a command must fit in the remaining columns;
-- column 40 must contain a character that specifies the mode for the command
-  (e.g., `N` for Normal mode, `I` for Insert mode, and so on);
-- additional characters may be added from right to left (e.g., a mapping that
-  may be executed in Normal and Insert mode may be labeled with `IN`, with the
-  label starting at column 39). See the cheat sheet in the plugin for examples
-  and a description of the used notation.
+- the key sequence and the label must fit in columns 26-40 (long key sequences
+  may be split into several lines);
+- the label is a right-justified sequence of one or more characters (e.g., `N`
+  for Normal mode, `I` for Insert mode, and so on).
+
+See the cheat sheet inside the plugin for the details.
 
