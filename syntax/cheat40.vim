@@ -23,6 +23,8 @@ hi def link Cheat40Command   Constant
 hi def link Cheat40Header    Title
 hi def link Cheat40About     Comment
 hi def link Cheat40FirstLine Statement
+hi def link Cheat40BeginSection Ignore
+hi def link Cheat40EndSection Ignore
 hi def link Cheat40Mode      Label
 
 let b:current_syntax = "cheat40"
