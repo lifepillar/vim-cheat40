@@ -68,7 +68,7 @@ Save as…                 :sav …        N
 Save all                 :wa           N
 Save read-only file      :w!           N
 Save session             :mks          N
-#Restore with `vim -S`
+#To restore, run `vim -S`
 Reload file from disk    :e            N
 Revert to last saved     :e!           N
 Convert buffer to HTML   :TOhtml       N
