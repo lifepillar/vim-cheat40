@@ -28,7 +28,7 @@ fun! cheat40#open()
       execute "$read" cs
     endfor
   endfor
-  norm gg0d_
+  norm ggd_
   setlocal foldlevel=1 foldmethod=marker foldtext=substitute(getline(v:foldstart),'\\s\\+{{{.*$','','')
   setlocal concealcursor=nc conceallevel=3
   setlocal expandtab nonumber norelativenumber nospell nowrap textwidth=40
