@@ -300,39 +300,39 @@ Browse command history   «C-f»         C
 Browse » search patterns q/            N
 Browse « search patterns q?            N
 Differences {{{2
-Use this file for diff    :diffthis    N
-Exit diff mode            :diffoff!    N
-Re-scan files             :diffupdate  N
-Next difference           ]c           N
-Prev difference           [c           N
-Diff put                  dp           N
-Diff obtain               do           N
-Get differences           :diffget     V
-Put differences           :diffput     V
+Use this file for diff   :diffthis     N
+Exit diff mode           :diffoff!     N
+Re-scan files            :diffupdate   N
+Next difference          ]c            N
+Prev difference          [c            N
+Diff put                 dp            N
+Diff obtain              do            N
+Get differences          :diffget      V
+Put differences          :diffput      V
 }}}
 Go {{{1
 Basic movement {{{2
-Left                      h            M
-Right                     l            M
-Up                        k            M
-Down                      j            M
-Up (in soft-wrap text)    gk           M
-Down (in soft-wrap text)  gj           M
-Start of next word        w            M
-Start of prev word        b            M
-End of next word          e            M
-End of prev word          ge           M
-Start of next WORD        W            M
-Start of prev WORD        B            M
-End of next WORD          E            M
-End of prev WORD          gE           M
-Start of line             0            M
-End of line               $            M
-This line 1st non-blank   ^            M
-Next line 1st non-blank   +            M
-Prev line 1st non-blank   -            M
-First line                gg           M
-Last line                 G            M
+Left                     h             M
+Right                    l             M
+Up                       k             M
+Down                     j             M
+Up (in soft-wrap text)   gk            M
+Down (in soft-wrap text) gj            M
+Start of next word       w             M
+Start of prev word       b             M
+End of next word         e             M
+End of prev word         ge            M
+Start of next WORD       W             M
+Start of prev WORD       B             M
+End of next WORD         E             M
+End of prev WORD         gE            M
+Start of line            0             M
+End of line              $             M
+This line 1st non-blank  ^             M
+Next line 1st non-blank  +             M
+Prev line 1st non-blank  -             M
+First line               gg            M
+Last line                G             M
 }}}
 Next ‹c› in this line    f‹c›          M
 Just before next ‹c›     t‹c›          M
