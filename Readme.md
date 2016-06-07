@@ -42,8 +42,8 @@ The syntax of a cheat sheet is very simple:
   fold-marker`);
 - sections of the form `About … {{{ … }}}` are interpreted as block comments;
 - lines starting with a `#` are interpreted as line comments;
-- each line, except for comments and section markers, must be exactly 40 columns
-  wide (comments and section titles may be shorter than that);
+- each line, except for comments and section markers, should be 40 columns wide
+  (comments and section markers may be shorter than that);
 - each item consists of a description, a key sequence, and a label;
 - the description must fit in columns 1–25 (long descriptions may be split into
   several lines);

@@ -9,8 +9,8 @@ endif
 syntax case ignore
 syntax sync fromstart
 
-syn match   Cheat40Descr        /\%1v.*\%<25v/
-syn match   Cheat40Command      /\%26v.*\%40v/ contains=Cheat40Mode,Cheat40Angle,Cheat40DblAngle
+syn match   Cheat40Descr        /\%1v.*\%<26v./
+syn match   Cheat40Command      /\%26v.*\%<41v./ contains=Cheat40Mode,Cheat40Angle,Cheat40DblAngle
 syn match   Cheat40Header       /^.*{{{\d*$/ contains=Cheat40BeginSection
 syn region  Cheat40About        start=/^About.*{{{\d*$/ end=/^}}}$/ keepend contains=Cheat40BeginSection,Cheat40EndSection,Cheat40Tag,Cheat40Angle,Cheat40DblAngle
 syn match   Cheat40FirstLine    /\%1l.*/
