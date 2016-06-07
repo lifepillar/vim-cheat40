@@ -423,6 +423,7 @@ Help search              :helpgrep …   N
 #to move between results
 Help on highlight test   :h hitest.vim N
 View mappings            :map …        N
+View Insert mode mappings:imap …       N
 View registers           :di           N
 List of loaded plugins   :scr          N
 List of digraphs         :digraphs     N
