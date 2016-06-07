@@ -71,6 +71,7 @@ Save session             :mks          N
 #To restore, run `vim -S`
 Reload file from disk    :e            N
 Revert to last saved     :e!           N
+#Unsaved changes are lost!
 Convert buffer to HTML   :TOhtml       N
 Print document           :hardcopy     N
 Quit (window)            :q            N
