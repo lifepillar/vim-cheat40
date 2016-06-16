@@ -22,7 +22,7 @@ syn match   Cheat40Mode         /[NICVTOM*]\+\%>40v/
 syn match   Cheat40Angle        /‹[^› \t]\+›/ contained
 syn match   Cheat40DblAngle     /«[^» \t]\+»/ contained
 syn match   Cheat40Comment      /^#.*$/ contains=Cheat40Hash
-syn match   Cheat40Hash         /#/ contained conceal
+syn match   Cheat40Hash         /^#\s*/ contained conceal
 
 hi def link Cheat40Descr        Normal
 hi def link Cheat40Command      Constant

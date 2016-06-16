@@ -68,10 +68,10 @@ Save as…                 :sav …        N
 Save all                 :wa           N
 Save read-only file      :w!           N
 Save session             :mks          N
-#To restore, run `vim -S`
+# To restore, run `vim -S`
 Reload file from disk    :e            N
 Revert to last saved     :e!           N
-#Unsaved changes are lost!
+# Unsaved changes are lost!
 Convert buffer to HTML   :TOhtml       N
 Print document           :hardcopy     N
 Quit (window)            :q            N
@@ -155,7 +155,7 @@ Select all               ggVG          N
 Delete previous word     «C-w»        IC
 Erase line before cursor «C-u»        IC
 Start recording macro    q‹r›          N
-#Press q to stop recording
+# Press q to stop recording
 Run recorded macro       @‹r›          N
 Repeat last macro        @@            N
 Repeat last Ex command   @:            N
@@ -294,9 +294,9 @@ Next in location list    :lne          N
 Next command             «C-n»         C
 Prev command             «C-p»         C
 Browse command history   q:            N
-#Use «C-c» to dismiss
+# Use «C-c» to dismiss
 Browse command history   «C-f»         C
-#Use «C-c» to dismiss
+# Use «C-c» to dismiss
 Browse » search patterns q/            N
 Browse « search patterns q?            N
 Differences {{{2
@@ -419,8 +419,8 @@ Execute Cmd in all tabs  :tabdo ‹Cmd›  N
 Help {{{1
 Help about …             :h …          N
 Help search              :helpgrep …   N
-#Use quickfix commands
-#to move between results
+# Use quickfix commands
+# to move between results
 Help on highlight test   :h hitest.vim N
 View mappings            :map …        N
 View Insert mode mappings:imap …       N
