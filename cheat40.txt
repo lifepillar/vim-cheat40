@@ -272,6 +272,7 @@ Edir prev in arg list    :prev         N
 Edir next in arg list    :next         N
 Get file info            «C-g»         N
 Character info           ga           *N
+Line/word/char count     g«C-g»       VN
 Toggle cursorline        :setl cul!    N
 Toggle search highlight  :setl hls!    N
 Search {{{1
