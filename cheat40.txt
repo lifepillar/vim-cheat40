@@ -375,27 +375,26 @@ To start of next fold    zj            N
 To end of previous fold  zk            N
 Window {{{1
 New horizontal split     :new          N
-Ditto                    «C-w»n        N
+Ditto                    «C-w»«C-n»    N
 New vertical split       :vnew         N
 Close window             «C-w»c        N
-Close inactive windows   «C-w»o        N
+Close inactive windows   «C-w»«C-o»    N
 Split horizontally       «C-w»s        N
-Split vertically         «C-w»v        N
-Exchange windows         «C-w»x        N
-Ditto                    «C-w»«C-x»    N
+Split vertically         «C-w»«C-v»    N
+Exchange windows         «C-w»«C-x»    N
 Move to the very top     «C-w»K        N
 Move to the very bottom  «C-w»J        N
 Move to the far right    «C-w»L        N
 Move to the far left     «C-w»H        N
 One window per file      :ball         N
-Cycle through windows    «C-w»w        N
-Ditto                    «C-w»«C-w»    N
-Edit window to the left  «C-w»h        N
-Edit window below        «C-w»j        N
-Edit window above        «C-w»k        N
-Edit window to the right «C-w»l        N
-Edit top window          «C-w»t        N
-Edit bottom window       «C-w»b        N
+Cycle through windows    «C-w»«C-w»    N
+Back to previous window  «C-w»«C-p»    N
+Edit window to the left  «C-w»«C-h»    N
+Edit window below        «C-w»«C-j»    N
+Edit window above        «C-w»«C-k»    N
+Edit window to the right «C-w»«C-l»    N
+Edit top window          «C-w»«C-t»    N
+Edit bottom window       «C-w»«C-b»    N
 All windows same size    «C-w»=        N
 Maximize height          «C-w»_        N
 Maximize width           «C-w»|        N
