@@ -82,8 +82,7 @@ Ditto                    ZQ            N
 Save all and exit Vim    :xa           N
 Exit Vim without saving  :qa!          N
 File Explorer (Netrw) {{{2
-Exit file explorer       :Rex          N
-Open                     «CR»         *N
+Open file/directory      «CR»         *N
 Open in horizontal split o            *N
 Open in vertical split   v            *N
 Open in a new tab        t            *N
@@ -100,6 +99,7 @@ Refresh file list        «C-l»         N
 File info                qf           *N
 Toggle hidden files      a             N
 Switch file list format  i             N
+Exit file explorer       :Rex          N
 }}}
 Edit {{{1
 Basics {{{2
