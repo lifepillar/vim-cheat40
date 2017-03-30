@@ -4,6 +4,8 @@
 
 let s:cheat40_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')
 
+execute "setlocal" "tags=".s:cheat40_dir."/tags"
+
 " Courtesy of Pathogen
 function! s:slash() abort
   return !exists("+shellslash") || &shellslash ? '/' : '\'
