@@ -1,12 +1,12 @@
 # Cheat40: a cheat sheet for Vim
 
 Cheat40 is a foldable extensible 40-column cheat sheet that you may open in Vim
-by pressing `<leader>?`. Mappings and commands are organized like the menus of
-a GUI app: there is a File section, an Edit section, a View section, and so on.
-For each item the description comes first, because one typically wants to find
-how to execute a task, not what the meaning of a key sequence is (there is Vim's
-help for that). Syntax coloring and the use of `conceal` keep the cheat sheet
-clutter-free and easy to read.
+by pressing `<leader>?` (the mapping is customizable, of course). Mappings and
+commands are organized like the menus of a GUI app: there is a File section, an
+Edit section, a View section, and so on. For each item the description comes
+first, because one typically wants to find how to execute a task, not what the
+meaning of a key sequence is (there is Vim's help for that). Syntax coloring and
+the use of `conceal` keep the cheat sheet clutter-free and easy to read.
 
 
 ## Installation
