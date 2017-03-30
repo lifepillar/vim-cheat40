@@ -1,8 +1,8 @@
 leader	$VIMRUNTIME/doc/map.txt	/*<leader>*
 registers	$VIMRUNTIME/doc/change.txt	/*registers*
-motion.txt	$VIMRTUNTIME/doc/motion.txt	/*motion.txt*
+motion.txt	$VIMRUNTIME/doc/motion.txt	/*motion.txt*
 text-objects	$VIMRUNTIME/doc/motion.txt	/*text-objects*
-pattern.txt	$VIMRTUNTIME/doc/pattern.txt	/*pattern.txt*
-cmdline.txt	$VIMRTUNTIME/doc/cmdline.txt	/*cmdline.txt*
+pattern.txt	$VIMRUNTIME/doc/pattern.txt	/*pattern.txt*
+cmdline.txt	$VIMRUNTIME/doc/cmdline.txt	/*cmdline.txt*
 variables	$VIMRUNTIME/doc/eval.txt	/*variables*
-options.txt	$VIMRTUNTIME/doc/options.txt	/*options.txt*
+options.txt	$VIMRUNTIME/doc/options.txt	/*options.txt*
