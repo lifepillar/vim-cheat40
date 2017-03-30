@@ -12,15 +12,15 @@ About {{{2
   ‹r›    A register (", *, 0, 1, …)
          See `registers`
   ‹Move› A motion or a text object
-         See `motion.txt`
+         See `$VIMRUNTIME/doc/motion.txt`
          See `text-objects`
   ‹P›    A regular expression (pattern)
-         See `pattern.txt`
+         See `$VIMRUNTIME/doc/pattern.txt`
   ‹Cmd›  An Ex command
-         See `cmdline.txt`
+         See `$VIMRUNTIME/doc/cmdline.txt`
   ‹Var›  A variable or option name
          See `variables`
-         See `options.txt`
+         See `$VIMRUNTIME/doc/options.txt`
   ‹n›    A (possibly optional) number
   ‹c›    A single character
   …      Any text
