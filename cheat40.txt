@@ -136,13 +136,13 @@ Copy into OS clipboard   "*y           O
 Copy ‹n› lines           ‹n›yy         N
 Copy until the EOL       y$            N
 Copy all                 :%y           N
-Paste after cursor       p             N
-Paste before cursor      P             N
-Paste from register ‹r›  "‹r›p         N
+Paste after cursor       p            VN
+Paste before cursor      P            VN
+Paste from register ‹r›  "‹r›p        VN
 Paste from register ‹r›  «C-r»‹r›     IC
-Paste from OS clipboard  "*p           N
-Paste after and align    ]p            N
-Paste before and align   ]P            N
+Paste from OS clipboard  "*p          VN
+Paste after and align    ]p           VN
+Paste before and align   ]P           VN
 Visual mode (select)     v             N
 Linewise visual mode     V             N
 Block visual mode        «C-v»         N
