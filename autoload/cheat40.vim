@@ -19,7 +19,7 @@ function! s:split(path) abort
 endfunction
 
 fun! cheat40#open()
-  botright 40vnew +setlocal\ buftype=nofile\ bufhidden=hide\ nobuflisted\ noswapfile
+  botright 40vnew +setlocal\ buftype=nofile\ bufhidden=hide\ nobuflisted\ noswapfile\ winfixwidth
   if get(g:, 'cheat40_use_default', 1)
     execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
   endif
