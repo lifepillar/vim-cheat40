@@ -225,7 +225,7 @@ Set text width           :set tw=‹n›   N
 Sort selected lines      :sort         V
 Sort+remove duplicates   :sort u       V
 Run macro for each line  :norm @‹r›    V
-Run Cmd on lines =~ ‹P›  :g/‹P›/‹Cmd›  N
+Run Cmd on lines =~ ‹P›  :g/‹P›/‹Cmd› VN
 Autocomplete (search »)  «C-n»         I
 Autocomplete (search «)  «C-p»         I
 Omnicomplete             «C-x»«C-o»    I
