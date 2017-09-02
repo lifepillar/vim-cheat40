@@ -58,6 +58,7 @@ New untitled document    :enew         N
 New/open file or dir     :e …          N
 Split open (horizontal)  :sp …         N
 Split open (vertical)    :vs …         N
+Reopen last opened file  «C-o»«C-o»    N
 Open with external app   gx           *N
 File explorer (Netrw)    :Ex           N
 Close file               :bd           N
