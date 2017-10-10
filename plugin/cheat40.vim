@@ -10,6 +10,6 @@ let g:loaded_cheatsheet = 1
 nnoremap <script> <silent> <plug>Cheat40Open :<c-u>call cheat40#open()<cr>
 
 if !hasmapto('<plug>Cheat40Open', 'n')
-  nmap <leader>? <plug>Cheat40Open
+  nmap <unique> <leader>? <plug>Cheat40Open
 endif
 
