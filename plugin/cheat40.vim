@@ -8,7 +8,10 @@ endif
 let g:loaded_cheatsheet = 1
 
 nnoremap <script> <silent> <plug>Cheat40Open :<c-u>call cheat40#open()<cr>
-command Cheat :call cheat40#open_new_tab()
+nnoremap <script> <silent> <plug>Cheat40OpenTabbnew :<c-u>call cheat40#open_tabnew()<cr>
+
+command Cheat :call cheat40#open()
+command CheatTabnew :call cheat40#open_tabnew()
 
 if !hasmapto('<plug>Cheat40Open', 'n')
   nmap <unique> <leader>? <plug>Cheat40Open
