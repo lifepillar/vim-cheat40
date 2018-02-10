@@ -41,7 +41,7 @@ endf
 
 
 fun! cheat40#open_tabnew()
-  tabnew
+  tabnew Cheatsheet
   if get(g:, 'cheat40_use_default', 1)
     execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
   endif
