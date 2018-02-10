@@ -38,3 +38,25 @@ fun! cheat40#open()
   nnoremap <silent> <buffer> <tab> <c-w><c-p>
   nnoremap <silent> <buffer> q <c-w><c-p>@=winnr("#")<cr><c-w>c
 endf
+
+
+fun! cheat40#open_new_tab()
+  newtab
+  if get(g:, 'cheat40_use_default', 1)
+    execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
+  endif
+  for glob in reverse(s:split(&runtimepath))
+    for cs in filter(map(filter(split(glob(glob), "\n"), 'v:val !~ "cheat40"'), 'v:val.s:slash()."cheat40.txt"'), 'filereadable(v:val)')
+      execute "$read" cs
+    endfor
+  endfor
+  norm ggd_
+  setlocal foldlevel=1 foldmethod=marker foldtext=substitute(getline(v:foldstart),'\\s\\+{{{.*$','','')
+  setlocal concealcursor=nc conceallevel=3
+  setlocal expandtab nonumber norelativenumber nospell nowrap textwidth=40
+  setlocal fileencoding=utf-8 filetype=cheat40 nomodifiable
+  setlocal iskeyword=@,48-57,-,/,.,192-255
+  execute "setlocal" "tags=".s:cheat40_dir.s:slash()."tags"
+  nnoremap <silent> <buffer> <tab> <c-w><c-p>
+  nnoremap <silent> <buffer> q <c-w><c-p>@=winnr("#")<cr><c-w>c
+endf
