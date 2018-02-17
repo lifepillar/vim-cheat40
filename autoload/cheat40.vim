@@ -18,8 +18,12 @@ function! s:split(path) abort
   return map(split,'substitute(v:val,''\\\([\\,]\)'',''\1'',"g")')
 endfunction
 
-fun! cheat40#open()
-  botright 40vnew +setlocal\ buftype=nofile\ bufhidden=hide\ nobuflisted\ noswapfile\ winfixwidth
+fun! cheat40#open(newtab)
+  if a:newtab
+    tabnew +setlocal\ buftype=nofile\ bufhidden=hide\ nobuflisted\ noswapfile\ winfixwidth
+  else
+    botright 40vnew +setlocal\ buftype=nofile\ bufhidden=hide\ nobuflisted\ noswapfile\ winfixwidth
+  endif
   if get(g:, 'cheat40_use_default', 1)
     execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
   endif
