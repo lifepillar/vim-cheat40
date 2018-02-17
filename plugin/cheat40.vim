@@ -14,3 +14,4 @@ if !hasmapto('<plug>Cheat40Open', 'n')
   nmap <unique> <leader>? <plug>Cheat40Open
 endif
 
+command -bar -nargs=0 -bang Cheat40 call cheat40#open("<bang>" ==# '!')
