@@ -33,7 +33,8 @@ fun! cheat40#open(newtab)
     endfor
   endfor
   norm ggd_
-  setlocal foldlevel=1 foldmethod=marker foldtext=substitute(getline(v:foldstart),'\\s\\+{{{.*$','','')
+  setlocal foldmethod=marker foldtext=substitute(getline(v:foldstart),'\\s\\+{{{.*$','','')
+  execute 'setlocal foldlevel='.get(g:, 'cheat40_foldlevel', 1)
   setlocal concealcursor=nc conceallevel=3
   setlocal expandtab nonumber norelativenumber nospell nowrap textwidth=40
   setlocal fileencoding=utf-8 filetype=cheat40 nomodifiable
