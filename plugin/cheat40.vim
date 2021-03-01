@@ -10,6 +10,6 @@ let g:loaded_cheatsheet = 1
 command -bar -nargs=0 -bang Cheat40 call cheat40#open("<bang>" ==# '!')
 
 if mapcheck("<leader>?", "n") == ""
-  nmap <unique> <leader>? :<c-u>Cheat40<cr>
+  nnoremap <unique> <leader>? :<c-u>Cheat40<cr>
 endif
 
