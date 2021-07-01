@@ -37,9 +37,12 @@ fun! cheat40#open(newtab)
   execute 'setlocal foldlevel='.get(g:, 'cheat40_foldlevel', 1)
   setlocal concealcursor=nc conceallevel=3
   setlocal expandtab nonumber norelativenumber nospell nowrap textwidth=40
+  setlocal foldcolumn=0 sidescrolloff=0
   setlocal fileencoding=utf-8 filetype=cheat40 nomodifiable
   setlocal iskeyword=@,48-57,-,/,.,192-255
   execute "setlocal" "tags=".s:cheat40_dir.s:slash()."tags"
   nnoremap <silent> <buffer> <tab> <c-w><c-p>
   nnoremap <silent> <buffer> q <c-w><c-p>@=winnr("#")<cr><c-w>c
 endf
+
+" vim: nofen

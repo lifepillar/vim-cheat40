@@ -43,3 +43,4 @@ hi def link Cheat40Runtime      Ignore
 
 let b:current_syntax = "cheat40"
 
+" vim: nofen
