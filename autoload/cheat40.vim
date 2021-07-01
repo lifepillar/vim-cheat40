@@ -41,7 +41,8 @@ fun! cheat40#open(newtab)
   setlocal fileencoding=utf-8 filetype=cheat40 nomodifiable
   setlocal iskeyword=@,48-57,-,/,.,192-255
   execute "setlocal" "tags=".s:cheat40_dir.s:slash()."tags"
-  nnoremap <silent> <buffer> <tab> <c-w><c-p>
+  nnoremap <silent> <buffer> <tab> za
+  " nnoremap <silent> <buffer> <tab> <c-w><c-p>
   nnoremap <silent> <buffer> q <c-w><c-p>@=winnr("#")<cr><c-w>c
 endf
 

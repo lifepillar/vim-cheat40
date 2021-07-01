@@ -1,4 +1,5 @@
-Press q to dismiss, <Tab> to lose focus
+Press q to dismiss,
+<Tab> to toggle folds
 About {{{2
   Abbreviations used in descriptions:
 
