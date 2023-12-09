@@ -36,6 +36,11 @@ set the following variable in your `.vimrc`:
 In this case, I recommend that you copy `cheat40.txt` into your `.vim` folder
 and modify it to suit your needs.
 
+You can also add filetype-specific cheats, by adding `cheat40_<filetype>.txt`
+files in your `runtimepath`. If such files are present, they'll be used instead
+of the builtin documentation and for that filetype, normal `cheat40.txt` files
+will also be ignored.
+
 The syntax of a cheat sheet is very simple:
 
 - foldable sections use Vim's default markers (`{{{` and `}}}`) (see `:h

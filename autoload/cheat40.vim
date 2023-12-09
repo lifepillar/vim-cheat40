@@ -18,20 +18,31 @@ function! s:split(path) abort
   return map(split,'substitute(v:val,''\\\([\\,]\)'',''\1'',"g")')
 endfunction
 
+function! s:add_fname(fname)
+  let found = v:false
+  for glob in reverse(s:split(&runtimepath))
+    for cs in filter(map(filter(split(glob(glob), "\n"), 'v:val !~ "'.a:fname.'"'), 'v:val.s:slash()."'.a:fname.'.txt"'), 'filereadable(v:val)')
+      execute "$read" cs
+      let found = v:true
+    endfor
+  endfor
+  return found
+endfunction
+
 fun! cheat40#open(newtab)
+  let name_with_ft = "cheat40_".&ft
   if a:newtab
     tabnew +setlocal\ buftype=nofile\ bufhidden=hide\ nobuflisted\ noswapfile\ winfixwidth
   else
     botright 40vnew +setlocal\ buftype=nofile\ bufhidden=hide\ nobuflisted\ noswapfile\ winfixwidth
   endif
-  if get(g:, 'cheat40_use_default', 1)
-    execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
+  let found_filetype = s:add_fname(name_with_ft)
+  if !found_filetype
+    if get(g:, 'cheat40_use_default', 1)
+      execute '$read' s:cheat40_dir.s:slash().'cheat40.txt'
+    endif
+    call s:add_fname("cheat40")
   endif
-  for glob in reverse(s:split(&runtimepath))
-    for cs in filter(map(filter(split(glob(glob), "\n"), 'v:val !~ "cheat40"'), 'v:val.s:slash()."cheat40.txt"'), 'filereadable(v:val)')
-      execute "$read" cs
-    endfor
-  endfor
   norm ggd_
   setlocal foldmethod=marker foldtext=substitute(getline(v:foldstart),'\\s\\+{{{.*$','','')
   execute 'setlocal foldlevel='.get(g:, 'cheat40_foldlevel', 1)
